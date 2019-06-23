@@ -1,0 +1,643 @@
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  overflow-x:hidden;
+}
+
+nav {
+  width: 100%;
+  height: 45px;
+  background: ;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  position: fixed;
+  z-index: 5;
+  background-color: #FFD9DA;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 22px;
+	font-family: "Century Gothic";
+  font-weight: bold;
+}
+.more-nav {
+	display: none;
+}
+
+main {
+  background-color: #FFD9DA;
+}
+
+.left {
+  background-color: #FFD9DA;
+  height: 578px;
+}
+
+.left .background {
+  width: 1500px;
+  height: 1500px;
+  margin-top: -150px;
+}
+
+.left .back {
+  width: 800px;
+    height: 800px;
+    margin-left: -1725px;
+    margin-top: 450px;
+}
+
+
+.left-info {
+  padding-top: 150px;
+  padding-left: 5%;
+}
+
+.right {
+  padding-left: 20px;
+  background-color: white;
+}
+
+.bag {
+  display: flex;
+  margin-top: 400px;
+  height: 370px;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.bag h1 {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Century Gothic"
+}
+
+.right-last {
+  padding-top: 70px;
+  height: 730px;
+  padding-left: 20px;
+}
+
+footer {
+  background-color: #FFD9DA;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+
+footer p {
+  font-size: 20px;
+  font-family: "Roboto";
+}
+
+footer .art {
+  width: 200px;
+}
+
+.facebook {
+  position: relative;
+  top: -8px;
+}
+
+@media screen and (max-width: 425px;) {
+
+  .bag {
+    height: 200px;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+
+  .left {
+    height: 470px;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .bag {
+    height: 74vw;
+  }
+
+  .right {
+    height: 486px;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 70px;
+  }
+
+  .pict {
+    position: relative;
+    right: calc((79vw - var(--container-width)) / 2);
+    --container-width: 59vw;
+    width: 75vw;
+    height: 55vw;
+    top: 29px;
+    z-index: 2;
+  }
+
+  .more-post {
+    flex-direction: row;
+    align-items: baseline;
+    height: 620px;
+  }
+
+  .right-last {
+    padding-top: 20px;
+    display: flex;
+    height: 583px;
+    padding-left: 5%;
+  }
+
+@media screen and (min-width: 1024px) {
+
+  nav {
+		height: 68px;
+    width: 1440px;
+		justify-content: flex-start;
+	}
+
+	.more-nav {
+		display: unset;
+		padding-left: 102px;
+	}
+
+	.more-nav a {
+    display: inline-block;
+    line-height: 0.2;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+	.more-nav a:after {
+    background-color: #FDE40E;
+    display: block;
+    content: "";
+    width: 0%;
+    height: 3px;
+    margin-left: -10px;
+
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+  }
+  .more-nav a:hover:after,
+  .more-nav a:focus:after {
+      width: 100%;
+      padding-left: 20px;
+  }
+
+	.more-nav a {
+		padding-right: 30px;
+	}
+
+  .more {
+    cursor: pointer;
+  }
+
+	.first {
+		height: 50px;
+	}
+
+	.last {
+		display: none;
+	}
+
+  .left p {
+    font-size: 55px;
+    width: 579px;
+    font-family: "Roboto";
+    position: absolute;
+    margin-top: 567px;
+    margin-left: 765px;
+  }
+
+  .left {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 720px;
+    justify-content: flex-end;
+  }
+
+  .bag {
+    display: flex;
+    justify-content: center;
+    height: 600px;
+  }
+
+  .bag p {
+    font-size: 35px;
+    position: absolute;
+    width: 547px;
+    top: 1294px;
+    left: 121px;
+    font-family: "Roboto";
+    line-height: 45px;
+  }
+
+   .bag h1 {
+     position: absolute;
+     font-size: 50px;
+     font-weight: bold;
+     font-family: "Century Gothic";
+     margin-left: -450px;
+  }
+
+  .bag img {
+    width: 709px;
+    margin-top: 5px;
+    margin-left: 640px;
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.5);
+  }
+
+  .pict {
+      position: relative;
+      right: calc((75vw - var(--container-width)) / 2);
+      --container-width: 149%;
+      --container-width: 82%;
+      width: 90vw;
+      height: 65vw;
+      top: 42px;
+    }
+
+    .right {
+      display: flex;
+      flex-direction: row;
+      margin-top: 100px;
+      padding-left: 3%;
+      height: 755px;
+      box-shadow: 5px 5px 30px rgba(0,0,0,0.5);
+  }
+
+  .right h1 {
+    position: absolute;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Century Gothic";
+    margin-left: 363px;
+    width: 508px;
+    margin-top: 70px;
+    line-height: 65px;
+  }
+
+  .right p {
+    font-size: 35px;
+    width: 1200px;
+    margin-top: 250px;
+    margin-left: -300px;
+    font-family: "Roboto";
+    line-height: 45px;
+  }
+
+  .more-post {
+    padding-top: 45px;
+    height: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .more-post img {
+    width: 500px;
+    height: 700px;
+    margin-left: 750px;
+    margin-top: 104px;
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.5);
+  }
+
+  .more-post h1 {
+    position: absolute;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Century Gothic";
+    margin-left: -297px;
+    width: 551px;
+    margin-top: 100px;
+  }
+
+  .more-post p {
+    font-size: 35px;
+    position: absolute;
+    width: 547px;
+    top: 2867px;
+    left: 144px;
+    font-family: "Roboto";
+    line-height: 45px;
+  }
+
+  .right-next {
+    margin-top: 168px;
+    height: 600px;
+  }
+
+  .right-next img {
+    width: 650px;
+    margin-left: 39px;
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.5);
+  }
+
+  .right-next h1 {
+    position: absolute;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Century Gothic";
+    margin-left: 769px;
+    margin-top: -443px;
+  }
+
+  .right-next p {
+    font-size: 35px;
+    position: absolute;
+    width: 547px;
+    top: 3733px;
+    left: 776px;
+    font-family: "Roboto";
+    line-height: 45px;
+  }
+
+  .left-next {
+    background-color: white;
+    height: 3380px;
+    margin-top: 100px;
+
+  }
+
+  .left-next .next {
+    width: 1700px;
+    margin-left: 150px;
+    margin-top: -50px;
+  }
+
+  .left-next h1 {
+    position: absolute;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Century Gothic";
+    margin-left: 150px;
+    margin-top: 100px;
+  }
+
+  .left-next p {
+    font-size: 35px;
+    position: absolute;
+    width: 547px;
+    top: 4533px;
+    left: 156px;
+    font-family: "Roboto";
+    line-height: 45px;
+  }
+
+  .left-next h2 {
+    position: absolute;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Century Gothic";
+    margin-left: 150px;
+    width: 551px;
+    margin-top: 100px;
+  }
+
+  .left-next .tonext {
+    width: 1440px;
+    margin-top: 214px;
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.5);
+  }
+
+  .left-next h3 {
+    position: absolute;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Century Gothic";
+    margin-left: 150px;
+    width: 551px;
+    margin-top: 100px;
+  }
+
+  .left-next .post {
+    margin-top: 250px;
+  }
+
+  .left-next .post img{
+    width: 400px;
+    margin-left: 38px;
+    margin-right: 38px;
+    box-shadow: 5px 5px 50px rgba(0,0,0,0.5);
+  }
+
+  .right-last {
+    height: 3000px;
+  }
+
+  .right-last h1 {
+    position: absolute;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Century Gothic";
+    margin-left: 80px;
+    margin-top: 100px;
+  }
+
+  .right-last p {
+    font-size: 35px;
+    position: absolute;
+    width: 547px;
+    top: 7950px;
+    left: 156px;
+    font-family: "Roboto";
+    line-height: 45px;
+  }
+
+  .right-last .next {
+    position: relative;
+    height: 700px;
+    width: 500px;
+    top: 106px;
+    left: 780px;
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.5);
+  }
+
+  .right-last h2{
+    position: absolute;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Century Gothic";
+    margin-left: 80px;
+    width: 551px;
+    margin-top: 1000px;
+  }
+
+
+  .right-last .tonext-last {
+    width: 1445px;
+    height: 900px;
+    margin-top: 1154px;
+    margin-left: -570px;
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.5);
+  }
+
+  .right-last h3 {
+    position: absolute;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Century Gothic";
+    margin-left: 80px;
+    width: 551px;
+    margin-top: 2200px;
+  }
+
+  .right-last .post1 {
+    margin-left: -1440px;
+    margin-top: 2350px;
+  }
+
+  .right-last .post1 img{
+    width: 324px;
+    margin-left: 15px;
+    margin-right: 15px;
+    box-shadow: 5px 5px 50px rgba(0,0,0,0.5);
+  }
+
+  .end {
+    height: 5000px;
+    background-color: black;
+  }
+
+  .end h1 {
+    position: absolute;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Century Gothic";
+    margin-left: 150px;
+    margin-top: 100px;
+    color: white;
+  }
+
+  .end p {
+    font-size: 35px;
+    position: relative;
+    width: 547px;
+    top: 200px;
+    left: 150px;
+    font-family: "Roboto";
+    line-height: 45px;
+    color: white;
+  }
+
+  .end .next-1 {
+    position: relative;
+    height: 550px;
+    width: 500px;
+    top: -110px;
+    left: 780px;
+  }
+
+  .end h2 {
+    position: absolute;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Century Gothic";
+    margin-left: 150px;
+    color: white;
+  }
+
+  .end .tonext-last {
+    position: relative;
+    width: 1445px;
+    height: 1000px;
+    top: 150px;
+  }
+
+  .end h3 {
+    position: absolute;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Century Gothic";
+    margin-left: 150px;
+    margin-top: 300px;
+    color: white;
+  }
+
+ .end .next-2 {
+    width: 1440px;
+    margin-top: 450px;
+  }
+
+  .end .post1 {
+    margin-top: 150px;
+  }
+
+
+  .end .post1 img{
+    width: 400px;
+    margin-left: 38px;
+    margin-right: 38px;
+  }
+
+  .end h4 {
+    position: absolute;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Century Gothic";
+    margin-left: 150px;
+    margin-top: 250px;
+    color: white;
+  }
+
+  .end .post2 {
+    margin-top: 400px;
+
+  }
+
+  .end .post2 img{
+    width: 400px;
+    margin-left: 38px;
+    margin-right: 38px;
+  }
+
+  .end .portfolio {
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Century Gothic";
+    margin-left: 40px;
+    margin-top: 50px;
+    color: white;
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media screen and (min-width: 1440px) {
+  .left  {
+    height: 800px;
+  }
+
+  .right  {
+    height: 645px;
+  }
+
+  .more-post {
+    margin-bottom: 100px;
+  }
+}
