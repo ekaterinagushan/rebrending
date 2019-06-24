@@ -157,7 +157,6 @@ main {
 
 .pict {
   position: relative;
-  right: calc((75vw - var(--container-width)) / 2);
   --container-width: 149%;
   --container-width: 82%;
   width: 90vw;
@@ -377,7 +376,7 @@ main {
 }
 
 .end {
-  height: 5000px;
+  height: 4900px;
   background-color: black;
 }
 
@@ -403,11 +402,11 @@ main {
 }
 
 .end .next-1 {
-  position: relative;
-  height: 550px;
-  width: 500px;
-  top: -110px;
-  left: 780px;
+  height: 500px;
+  width: 450px;
+  margin-top: -121px;
+  margin-left: 780px;
+  margin-bottom: 100px;
 }
 
 .end h2 {
@@ -416,6 +415,7 @@ main {
   font-weight: bold;
   font-family: "Century Gothic";
   margin-left: 150px;
+  margin-top: 42px;
   color: white;
 }
 
@@ -432,7 +432,7 @@ main {
   font-weight: bold;
   font-family: "Century Gothic";
   margin-left: 150px;
-  margin-top: 300px;
+  margin-top: 337px;
   color: white;
 }
 
@@ -463,7 +463,7 @@ main {
 }
 
 .end .post2 {
-  margin-top: 400px;
+  margin-top: 358px;
 
 }
 
@@ -499,4 +499,255 @@ footer p {
 
 footer .art {
   width: 200px;
+}
+
+@media (max-width: 1024px)  {
+
+  .main {
+    width: 1024px;
+  }
+
+  .left p {
+    margin-left: 350px;
+    margin-top: 450px;
+   }
+
+   .bag {
+     width: 1024px;
+   }
+
+   .bag h1 {
+     margin-left: -300px;
+   }
+
+   .bag p {
+     left: 61px;
+     font-size: 23px;
+     width: 470px;
+   }
+
+   .bag img {
+     width: 459px;
+     margin-left: 528px;
+   }
+
+   .right h1 {
+     margin-left: 0px;
+   }
+
+   .right p {
+     font-size: 23px;
+     width: 900px;
+     margin-left: -1350px;
+   }
+
+   .more-post h1 {
+     margin-left: -390px;
+   }
+
+   .more-post p {
+     font-size: 23px;
+     width: 470px;
+     left: 60px;
+   }
+
+   .more-post img {
+     width: 350px;
+     height: 500px;
+     margin-left: 117px;
+   }
+
+   .right-next {
+     height: 200px;
+   }
+
+   .right-next img {
+     width: 459px;
+     margin-top: -200px;
+     margin-left: 0px;
+   }
+
+   .right-next h1 {
+     margin-top: -300px;
+     margin-left: 500px;
+   }
+
+   .right-next p {
+     font-size: 23px;
+     width: 470px;
+     left: 500px;
+     top: 3550px;
+   }
+
+   .left-next  {
+    height: 2500px;
+   }
+
+   .left-next h1 {
+     margin-left: 50px;
+   }
+
+   .left-next p {
+     font-size: 23px;
+     width: 470px;
+     top: 4120px;
+     left: 50px;
+   }
+
+   .left-next .next {
+     margin-top: -400px;
+     margin-left: 110px;
+     left: 50px;
+   }
+
+   .left-next h2 {
+     margin-left: 50px;
+   }
+
+   .left-next .tonext {
+     width: 1024px;
+   }
+
+   .left-next h3 {
+     margin-left: 50px;
+   }
+
+   .left-next .post img {
+     width: 300px;
+     margin-right: 10px;
+     margin-left: 20px;
+   }
+
+   .right-last {
+     height: 2350px;
+   }
+
+
+   .right-last h1 {
+     margin-left: -15px;
+   }
+
+   .right-last p {
+     font-size: 23px;
+     width: 470px;
+     left: 50px;
+     top: 6650px;
+   }
+
+   .right-last .next {
+     width: 350px;
+     height: 500px;
+     margin-left: -257px;
+   }
+
+   .right-last h2 {
+     margin-left: -20px;
+     margin-top: 750px;
+   }
+
+   .right-last .tonext-last {
+     width: 1024px;
+     height: 700px;
+     margin-left: -170px;
+     margin-top: 850px;
+   }
+
+   .right-last h3 {
+    margin-left: -20px;
+     margin-top: 1700px;
+   }
+
+   .right-last .post1 {
+     margin-top: 1800px;
+     margin-left: -1000px;
+   }
+
+   .right-last .post1 img {
+     width: 205px;
+   }
+
+   .end {
+     height: 3800px;
+   }
+
+   .end h1 {
+     margin-left: 50px;
+   }
+
+   .end p {
+     margin-left: -100px;
+     font-size: 23px;
+     width: 470px;
+   }
+
+   .end .next-1 {
+     width: 350px;
+     height: 400px;
+     margin-left: 550px;
+     margin-top: -75px;
+   }
+
+   .end h2 {
+     margin-left: 50px;
+   }
+
+   .end .tonext-last {
+     width: 1024px;
+     height: 700px;
+   }
+
+   .end h3 {
+     margin-top: 350px;
+     margin-left: 50px;
+   }
+
+   .end .next-2 {
+     width: 1024px;
+    }
+
+    .end .post1 {
+      margin-top: 50px;
+     }
+
+    .end .post1 img{
+      width: 300px;
+      margin-left: 17px;
+      margin-right: 16px;
+     }
+
+     .end h4 {
+       margin-left: 50px;
+     }
+
+     .end .post2 img{
+       width: 300px;
+       margin-left: 17px;
+       margin-right: 16px;
+      }
+
+      footer p {
+        font-size: 10px;
+      }
+
+
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+ }
+
+
+@media (max-width: 767px) and (min-width: 425px) {
+   {
+
+  }
 }
