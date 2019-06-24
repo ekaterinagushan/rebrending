@@ -1,33 +1,62 @@
-@media (max-width: 1439px) and (min-width: 1024px) {
+ @media (max-width: 143px) and (min-width: 1024px) {
+   nav {
+  		height: 68px;
+  		justify-content: flex-start;
+  	}
+  	.more-nav {
+  		display: unset;
+  		padding-left: 102px;
+  	}
+  	.more-nav a {
+      display: inline-block;
+      line-height: 0.2;
+      text-decoration: none;
+      cursor: pointer;
+  }
+  	.more-nav a:after {
+      background-color: #FDE40E;
+      display: block;
+      content: "";
+      width: 0%;
+      height: 3px;
+      margin-left: -10px;
 
- footer {
-   width: 1440px;
- }
+      -webkit-transition: width .3s ease-in-out;
+      -moz--transition: width .3s ease-in-out;
+      transition: width .3s ease-in-out;
+  }
+  .more-nav a:hover:after,
+  .more-nav a:focus:after {
+      width: 100%;
+      padding-left: 20px;
+  }
+  	.more-nav a {
+  		padding-right: 30px;
+  	}
+    .more {
+      cursor: pointer;
+    }
+  	.first {
+  		height: 50px;
+  	}
+  	.last {
+  		display: none;
+  	}
 
- .left p {
-   margin-top: 510px;
-   margin-left: 637px;
- }
-
- .pict {
-    right: calc((100vw - var(--container-width)) / 2);
-    width: 120vw;
-    height: 82vw;
- }
+    footer {
+     width: 1440px;
+   }
 }
 
-@media (max-width: 1023px) and (min-width: 768px) {
-
-  .pict {
-    right: calc((145vw - var(--container-width)) / 2);
-    width: 170vw;
-    height: 120vw;
+ @media (max-width: 1023px) and (min-width: 768px) {
+   footer {
+    width: 1440px;
   }
 
-
+}
   @media (max-width: 767px) and (min-width: 320px) {
-    .more-nav {
-      display: none;
-    }
-  }
+    footer {
+     width: 1440px;
+   }
+
 }
